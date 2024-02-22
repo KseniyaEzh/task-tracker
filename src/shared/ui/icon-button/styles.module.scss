@@ -1,0 +1,14 @@
+@use "../../../app" as colors;
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: colors.$white;
+  background-color: colors.$black;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: colors.$green;
+  }
+}
