@@ -1,0 +1,28 @@
+@use "../../../app" as colors;
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+
+  & .date {
+    display: flex;
+    align-items: baseline;
+  
+    & .today {
+      margin-right: 10px;
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: colors.$green;
+    }
+  }
+
+  & .share {
+    font-size: 14px;
+    background-color: colors.$light-brown;
+    padding: 15px 0;
+    border-radius: 20px;
+  }
+}

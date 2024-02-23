@@ -1,9 +1,11 @@
-import React from 'react';
+import { Header } from 'entities/header';
+
+import styles from './styles.module.scss';
 
 const MainPage = () => {
   return (
-    <div>
-      tut
+    <div className={ styles.wrapper }>
+      <Header />
     </div>
   );
 };
