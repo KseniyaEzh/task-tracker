@@ -1,0 +1,17 @@
+@use "../../../app" as colors;
+
+.wrapper {
+  display: flex;
+
+  & .filter {
+    font-size: 14px;
+    background-color: colors.$light-brown;
+    padding: 15px 0;
+    border-radius: 20px;
+    margin-left: 10px;
+  }
+
+  & .active {
+    background-color: colors.$light-green;
+  }
+}

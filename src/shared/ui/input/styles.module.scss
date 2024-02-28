@@ -1,0 +1,23 @@
+@use "../../../app" as colors;
+
+.wrapper {
+  position: relative;
+
+  & .input {
+    background-color: colors.$light-brown;
+    border-radius: 20px;
+    min-width: 100px;
+    min-height: 30px;
+  
+    padding: 5px 15px 5px 45px;
+  }
+
+  & .icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    left: 10px;
+  }
+}
