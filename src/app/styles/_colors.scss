@@ -4,3 +4,10 @@ $light-gray: #FAFBFC;
 $green: #8F9D73;
 $light-green: #D4DACC;
 $light-brown: #F3F2E8;
+
+$priorities: (
+  high-priority: #EF7E7D,
+  average-priority: #FEC966,
+  medium-priority: #3B44B5,
+  low-priority: #3bb580,
+);
