@@ -1,0 +1,27 @@
+@use '../../../app/' as styles;
+
+.wrapper {
+  width: 300px;
+  height: 250px;
+
+  padding: 12px;
+
+  background-color: styles.$white;
+  border-radius: 20px;
+  
+  box-shadow: 0px 0px 15px styles.$dim-gray;
+
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
+
+  & .label {
+    @include styles.style-text(18px, 600);
+  }
+
+  & .description {
+    @include styles.style-text(14px, 500, styles.$gray);
+  }
+}

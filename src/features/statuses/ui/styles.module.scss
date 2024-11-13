@@ -1,4 +1,4 @@
-@use "../../../app" as colors;
+@use "../../../app" as styles;
 
 .wrapper {
   display: flex;
@@ -6,7 +6,7 @@
   align-items: center;
 
   & .point {
-    @each $priority, $color in colors.$priorities {
+    @each $priority, $color in styles.$priorities {
       &_#{$priority} {
         width: 8px;
         height: 8px;
@@ -14,5 +14,9 @@
         background-color: $color;
       }
     }
+  }
+
+  & .text {
+    @include styles.style-text(14px, 600);
   }
 }

@@ -1,4 +1,4 @@
-@use "../../../app" as colors;
+@use "../../../app" as styles;
 
 .wrapper {
   display: flex;
@@ -10,18 +10,16 @@
     align-items: baseline;
   
     & .today {
+      @include styles.style-text(20px, 600, styles.$green);
       margin-right: 10px;
-      font-size: 20px;
-      font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 3px;
-      color: colors.$green;
     }
   }
 
   & .share {
-    font-size: 14px;
-    background-color: colors.$light-brown;
+    @include styles.style-text(14px);
+    background-color: styles.$light-brown;
     padding: 15px 0;
     border-radius: 20px;
   }

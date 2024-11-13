@@ -15,7 +15,7 @@ const Statuses = ({ statusCode }: StatusesProps) => {
   return (
     <div className={ styles.wrapper }>
       <div className={ styles[`point_${color}`] }></div>
-      <div className={ styles.test }>{ text }</div>
+      <div className={ styles.text }>{ text }</div>
     </div>
   );
 };
